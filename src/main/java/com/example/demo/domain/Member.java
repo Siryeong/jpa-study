@@ -20,10 +20,14 @@ public class Member {
     private String password;
 
     @Builder
-    public Member(String username, String password) {
+    private Member(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
-
+    public Integer update(Member member) {
+        this.username = member.username;
+        this.password = member.password;
+        return this.memberId;
+    }
 }
