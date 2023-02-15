@@ -7,7 +7,7 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public abstract class DemoApplicationTests {
-	Logger logger = LoggerFactory.getLogger(DemoApplicationTests.class);
+	private Logger logger;
 
 	@LocalServerPort
 	private int port;
