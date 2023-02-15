@@ -1,4 +1,4 @@
-create table `user`
+create table `member`
 (
     id int not null auto_increment,
     username varchar(20) not null,
